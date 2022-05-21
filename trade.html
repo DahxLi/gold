@@ -40,7 +40,7 @@
 		    
 			
 				
-		        <td>403.20 / g</td>
+		        <td id="gold"> 点击下方获取按钮，获取实时金价</td>
 				
 				
 	
@@ -59,6 +59,14 @@
 				x=document.getElementById("upload") // 找到元素
 				x.style.color="#990066";          // 改变样式
 			}
+
+
+			function updata_gold_price()
+			{
+				x=document.getElementById("gold");  // 找到元素
+				x.innerHTML="正在获取实时金价，请稍等...";    // 改变内容
+			}
+
 		</script>
 		
 		
@@ -67,7 +75,7 @@
 		
 		<p id="demo"></p>
 
-
+<button type="button" onclick="updata_gold_price()">点击更新金价</button>
 <button type="button" onclick="displayDate()">显示日期</button>
 
 		
