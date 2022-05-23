@@ -1,3 +1,6 @@
+
+console.log(“有新的客户来了”)
+
 let username = "123";
 let password = "321";
 if (username === "1223" &&
